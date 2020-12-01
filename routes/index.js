@@ -6,10 +6,6 @@ router.get('/', (req, res) => {
     res.send('Authentication with MongoDB with endpoints')
 })
 
-router.get('/dashboard', (req, res) => {
-    res.send('Dashboard')
-})
-
 //@desc Adding new user
 //@route POST /adduser
 router.post('/adduser', actions.addNew)
